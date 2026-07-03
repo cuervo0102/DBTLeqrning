@@ -1,0 +1,94 @@
+[0m16:03:40.965370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022761135A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227634DFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227634DFB10>]}
+
+
+============================== 16:03:41.002896 | 3fe42728-99a1-421d-91b4-eccaad69ee2d ==============================
+[0m16:03:41.002896 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m16:03:41.003499 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\DELL\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init jaffle_shop', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:03:41.150156 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\DELL\.dbt
+[0m16:03:41.156817 [debug] [MainThread]: Starter project path: C:\Users\DELL\Desktop\dbt_project\venv\Lib\site-packages\dbt\include\starter_project
+[0m16:03:41.180987 [info ] [MainThread]: Setting up your profile.
+[0m16:08:15.070164 [info ] [MainThread]: Profile jaffle_shop written to C:\Users\DELL\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m16:08:15.100240 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:08:15.100866 [info ] [MainThread]: dbt version: 1.12.0-b3
+[0m16:08:15.101172 [info ] [MainThread]: python version: 3.13.14
+[0m16:08:15.101420 [info ] [MainThread]: python path: C:\Users\DELL\Desktop\dbt_project\venv\Scripts\python.exe
+[0m16:08:15.101774 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m16:08:15.142366 [info ] [MainThread]: Using profiles dir at C:\Users\DELL\.dbt
+[0m16:08:15.142875 [info ] [MainThread]: Using profiles.yml file at C:\Users\DELL\.dbt\profiles.yml
+[0m16:08:15.143280 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\DELL\Desktop\dbt_project\jaffle_shop\dbt_project.yml
+[0m16:08:15.143892 [info ] [MainThread]: adapter type: postgres
+[0m16:08:15.144144 [info ] [MainThread]: adapter version: 1.10.2
+[0m16:08:15.226070 [info ] [MainThread]: Configuration:
+[0m16:08:15.226770 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:08:15.227485 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:08:15.227862 [info ] [MainThread]: Required dependencies:
+[0m16:08:15.228255 [debug] [MainThread]: Executing "git --help"
+[0m16:08:15.261777 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:08:15.262432 [debug] [MainThread]: STDERR: "b''"
+[0m16:08:15.262726 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:08:15.263168 [info ] [MainThread]: Connection:
+[0m16:08:15.263512 [info ] [MainThread]:   host: localhost
+[0m16:08:15.263779 [info ] [MainThread]:   port: 5432
+[0m16:08:15.264011 [info ] [MainThread]:   user: dbt
+[0m16:08:15.264238 [info ] [MainThread]:   database: DBTLearning
+[0m16:08:15.264437 [info ] [MainThread]:   schema: dbt_dev
+[0m16:08:15.264626 [info ] [MainThread]:   connect_timeout: 10
+[0m16:08:15.264823 [info ] [MainThread]:   role: None
+[0m16:08:15.265014 [info ] [MainThread]:   search_path: None
+[0m16:08:15.265200 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:08:15.265395 [info ] [MainThread]:   sslmode: None
+[0m16:08:15.265586 [info ] [MainThread]:   sslcert: None
+[0m16:08:15.265779 [info ] [MainThread]:   sslkey: None
+[0m16:08:15.265976 [info ] [MainThread]:   sslrootcert: None
+[0m16:08:15.266165 [info ] [MainThread]:   application_name: dbt
+[0m16:08:15.266353 [info ] [MainThread]:   retries: 1
+[0m16:08:15.266725 [info ] [MainThread]: Registered adapter: postgres=1.10.2
+[0m16:08:15.445376 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:08:18.123980 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:08:18.124304 [debug] [MainThread]: On debug: select 1 as id
+[0m16:08:18.124503 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:08:18.171936 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "DBTLearning" does not exist
+
+[0m16:08:18.197727 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m16:08:18.198065 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m16:08:18.198303 [debug] [MainThread]: On debug: No close available on handle
+[0m16:08:18.198506 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:08:18.198955 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:08:18.199472 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "DBTLearning" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:08:18.199923 [info ] [MainThread]: Your new dbt project "jaffle_shop" was created!
+Initialized new project in C:\Users\DELL\Desktop\dbt_project\jaffle_shop\jaffle_shop
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:08:18.200349 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m16:08:18.201274 [debug] [MainThread]: Command `dbt init` succeeded at 16:08:18.201148 after 277.36 seconds
+[0m16:08:18.201724 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:08:18.201989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022763A810F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022763395B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227636AF680>]}
+[0m16:08:18.202285 [debug] [MainThread]: Flushing usage events
+[0m16:08:18.984525 [debug] [MainThread]: An error was encountered while trying to flush usage events
